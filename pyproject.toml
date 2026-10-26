@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qaw-tasks"
+version = "1.2.0"
+description = "A small command-line task tracker"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+qaw-tasks = "qaw_tasks.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
